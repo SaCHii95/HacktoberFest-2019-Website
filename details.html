@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from hacktoberfest.digitalocean.com/details by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Oct 2019 06:07:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Hacktoberfest presented by DigitalOcean and DEV</title>
+    <meta charset="utf-8">
+    <meta name="title" content="Hacktoberfest presented by DigitalOcean and DEV">
+    <meta name="description" content="Open source is changing the world – one pull request at a time.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@hacktoberfest">
+    <meta name="twitter:creator" content="@hacktoberfest">
+    <meta name="twitter:title" content="Hacktoberfest presented by DigitalOcean and DEV">
+    <meta name="twitter:image" content="assets/HF19_social-744d976f227e4aff6866443abcede8c651b309ec9c7c9f7410f5944f8e1299b9.png">
+    <meta name="twitter:url" content="index.html">
+    <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Hacktoberfest presented by DigitalOcean and DEV">
+    <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website">
+    <meta prefix="og: http://ogp.me/ns#" property="og:locale" content="en_US">
+    <meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="Hacktoberfest">
+    <meta prefix="og: http://ogp.me/ns#" property="og:description" content="Open source is changing the world – one pull request at a time.">
+    <meta prefix="og: http://ogp.me/ns#" property="og:url" content="index.html">
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="assets/HF19_social-744d976f227e4aff6866443abcede8c651b309ec9c7c9f7410f5944f8e1299b9.png">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon-2e022469fd44e4816b264a368d0457329a08b173aa768ce74d7e48f1036142e3.png" />
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="p2D3vGoAbb5iVl8dqxdL7gBwHVo/LmcramquYd0FVa8f6S8UrpfcHAbCbgVd1/nonN6rKUqaiGbHcdyGJxkePQ==" />
+    
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link rel="stylesheet" media="all" href="assets/application-e322e2f366acd2bcf419e7cdf6de873f46eb8183cb50bac4660aae0151d57ca2.css" data-turbolinks-track="reload" />
+    <link rel="stylesheet" href="../assets.digitalocean.com/cookieConsent/cookieConsent.css">
+    <script src="assets/application-801ef95c353c41e2ecec1962fe68236055c4b97dc8adc9792324196076bb12b6.js"></script>
+    <script>
+  var airbrake = new airbrakeJs.Client({
+    projectId: "244344",
+    projectKey: "706287fc6c288d10169d2a8d38577941"
+  });
+
+  airbrake.addFilter(function(notice) {
+    notice.context.environment = "production";
+    return notice;
+  });
+</script>
+    <script>
+    !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+    analytics.load('on5tkWRozncTh5P5dyA1cVsyrkGgvpvU', (document.cookie.indexOf('cookieconsent_status=dismiss') > -1 ? {} : { integrations: { All: false, 'Segment.io': true}}));
+    analytics.page();
+    }}();
+</script>
+
+  </head>
+  <body>
+  <div class="top-bgs">
+    <header>
+  <nav class="navbar" id="navbar">
+    <a href="index.html"><img id="header-logo" src="assets/logo-hf19-header-8245176fe235ab5d942c7580778a914110fa06a23c3d55bf40e2d061809d8785.svg" alt="Hacktoberfest Logo" width="475" ></a>
+    <ul class="navbar-end">
+      <li><a class=" navLink" href="index.html">home</a></li>
+      <li><a class="active navLink" href="details.html">details</a></li>
+      <li class="dropdown is-hoverable">
+        <div class="dropdown-trigger">
+          <a class=" navLink" href="events.html">Events</a>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+          <div class="dropdown-content">
+            <a class="dropdown-item navLink" href="events.html">view all events</a>
+            <hr class="dropdown-divider">
+            <a class="dropdown-item navLink" href="eventkit.html">event kit</a>
+          </div>
+        </div>
+      </li>
+      <li><a class=" navLink" href="faq.html">faqs</a></li>
+        <li><a class="button button-small navLink" href="https://github.com/login/oauth/authorize?client_id=4d945c76b71f8d38c871&amp;redirect_uri=https%3A%2F%2Fhacktoberfest.digitalocean.com%2Fauth%2Fgithub%2Fcallback&amp;response_type=code&amp;scope=user%3Aemail&amp;state=2b0ad5d71359f8d303a67fff337c3b0a23fa43143aacef9d">start hacking</a></li>
+    </ul>
+  </nav>
+</header>
+
+    <div class="section">
+  <div class="container">
+    <div class="details">
+      <h1 id="getting-started" class="title is-1"><a href="#getting-started">Getting started with Hacktoberfest</a></h1>
+      <p>We ask all participants to read through the details to
+        ensure that the global community is working toward a shared
+        goal. Thanks for honoring the values and following the rules
+        of participation.</p>
+    </div>
+    <div class="details-tabs">
+      <ul id="tabs" class="details-box box">
+        <li><a id="tab1">Beginners</a></li>
+        <li><a id="tab2">Maintainers</a></li>
+        <li><a id="tab3">Event organizers</a></li>
+        <li><a id="tab4">Companies</a></li>
+      </ul>
+      <div class="box">
+        <div id="tab1C" class="tab-block">
+          <div class="container">
+  <p>If you’re new to open source (everyone was once!),
+    take a look at our </p> <a href="https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-source">Introduction to Open Source series.</a>
+  <p>Before you make your first contribution, you should
+    familiarize yourself with
+  <a href="https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github">
+    How To Create a Pull Request</a>.</p>
+  <p>The following resources share repositories that curate tasks for beginners:</p>
+  <p> <span class="highlight">●</span> <a href="https://up-for-grabs.net/#/"> Up For Grabs</a> </p>
+  <p> <span class="highlight">●</span> <a href="http://issuehub.io/"> Issuehub.io</a> </p>
+  <p> <span class="highlight">●</span> <a href="https://www.firsttimersonly.com/"> First Timers Only</a> </p>
+  <p> <span class="highlight">●</span> <a href="http://yourfirstpr.github.io/"> Your First PR</a> </p>
+  <p> <span class="highlight">●</span> <a href="https://github.com/mungell/awesome-for-beginners"> Awesome for Beginners</a> </p>
+  <p>Once you start feeling more comfortable, you can find more open source
+    projects through the following programs: </p>
+    <p> <span class="highlight">●</span> <a href="http://www.pullrequestroulette.com/"> Pull Request Roulette</a> </p>
+    <p> <span class="highlight">●</span> <a href="https://www.codetriage.com/"> Code Triage</a> </p>
+    <p> <span class="highlight">●</span> <a href="https://24pullrequests.com/"> 24 P[ull] R[equest]s </a> </p>
+  <p> <span class="highlight">●</span> <a href="https://opensource.guide/how-to-contribute/">This is another great guide</a>  outlining ways you can contribute to open source.</p>
+</div>
+
+        </div>
+        <div id="tab2C" class="tab-block">
+          <div class="container">
+  <div class="container">
+    <p>Recommendations for creating a good Hacktoberfest issue in your project:</p>
+    <p>
+      <span class="highlight">●</span>
+      <a href="https://help.github.com/articles/applying-labels-to-issues-and-pull-requests/">
+        Apply the "Hacktoberfest" label
+      </a> to issues in your GitHub project that are ready for new contributors to work on.
+    </p>
+    <p>
+      <span class="highlight">●</span>
+      Add a CONTRIBUTING.md file with contribution guidelines to your repo.
+    </p>
+    <p>
+      <span class="highlight">●</span>
+      Choose issues that have a well-defined scope and are self-contained.
+    </p>
+    <p>
+      <span class="highlight">●</span>
+      Adopt a code of conduct to foster a greater sense of inclusion and community.
+    </p>
+
+    <br/>
+    <div class="line-br">
+      <span class="line-br-1">-</span>
+      <span class="line-br-2">-</span>
+    </div>
+
+    <p>Learn about driving more contributions to your project:</p>
+    <p>
+      <span class="highlight">●</span>
+      <a href="https://youtu.be/t5xFI6qqS6c">
+        How to Hacktoberfest — A guide for open source project maintainers, part 1
+      </a> (webinar)
+    </p>
+    <p>
+      <span class="highlight">●</span>
+      <a href="https://youtu.be/ODDOXsrTNqA">
+        How to Hacktoberfest — A guide for open source project maintainers, part 2
+      </a> (webinar)
+    </p>
+
+  </div>
+</div>
+
+        </div>
+        <div id="tab3C" class="tab-block">
+          <div class="container">
+  <p>
+    Organizing a Hacktoberfest event in October is a great way to support the open source community.
+  </p>
+  <p>
+    Last year, 267 events were organized in 50 countries. This year, let’s work together to bring this celebration to
+    even more people around the world! Explore the <a href="eventkit.html">Hacktoberfest Event Kit</a> and
+    <a href="https://youtu.be/IC-sCZrDz04">watch our webinar</a> to learn how to successfully organize a gathering in
+    your community.
+  </p>
+  <p>
+    Get exposure for your event and swag to share with your attendees.
+    <a href="eventkit.html#form">Submit here</a>.
+  </p>
+</div>
+
+        </div>
+        <div id="tab4C" class="tab-block">
+          <div class="container">
+  <p>Hacktoberfest is a great fit for technology companies looking to increase
+    participation in their open source projects. </p>
+  <p>Your company can participate by encouraging people to contribute to your
+     repositories, organizing community events, or engaging internal employees.</p>
+  <p>Logos from participating companies are displayed on the official
+    Hacktoberfest website to showcase your support of open source.</p>
+  <p>Our friends at SendGrid wrote <a href="https://sendgrid.com/wp-content/uploads/pdf/SendGrid-Hacktoberfest.pdf">this guide </a>outlining how they used
+    Hacktoberfest to increase their open source contributions by 3,510%.
+    They also talked <a href="https://devrel.net/community/surviving-hacktoberfest">about this growth </a>at DevRelCon.</p>
+</div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container details">
+      <h1 id="event-details" class="title is-1"><a href="#event-details">Event details</a></h1>
+      <p><span class="highlight">●</span> Hacktoberfest is open to everyone in our global community!</p>
+      <p><span class="highlight">●</span> Pull requests can be made in any GitHub-hosted repositories/projects.</p>
+      <p><span class="highlight">●</span> You can sign up anytime between October 1 and October 31.</p>
+    </div>
+
+    <div class="container details">
+      <h1 id="participation-rules" class="title is-1"><a href="#participation-rules">Participation rules</a></h1>
+      <p>To qualify for the official limited edition Hacktoberfest shirt,
+        you must register and then make four pull requests (PRs) between
+        October 1-31 (in any time zone). PRs can be made to any public
+        repo on GitHub, not only the ones with issues labeled Hacktoberfest.
+        If a maintainer reports your pull request as invalid or behavior not in
+        line with the project’s code of conduct, you will be ineligible to
+        participate. This year, the first 50,000 participants who successfully
+        complete the challenge will earn a T-shirt. (Last year 46,088
+        earned a shirt!)</p>
+    </div>
+
+    <div class="container details">
+      <h1 id="quality-standards" class="title is-1"><a href="#quality-standards">Quality standards</a></h1>
+      <p>In line with Hacktoberfest value #2 (Quantity is fun,
+        quality is key), here are examples of the PRs that we
+        consider to be low-quality contributions (which we discourage).</p>
+      <p><span class="highlight">●</span> PRs that are automated (e.g. scripted opening PRs to remove
+        whitespace/optimize images)</p>
+      <p><span class="highlight">●</span> PRs that are disruptive (e.g. taking someone else's branch/commits and making
+        a PR) </p>
+      <p><span class="highlight">●</span> PRs that are regarded by a project maintainer as a hindrance vs. helping</p>
+      <p><span class="highlight">●</span> Something that's clearly an attempt to simply +1 your PR count for October</p>
+      <p><span class="highlight">●</span> Last but not least, one PR to fix a typo is fine. 5 PRs to remove a stray
+        whitespace... not. </p>
+    </div>
+
+    <div class="container details">
+      <h1 id="values" class="title is-1"><a href="#values">Values</a></h1>
+      <p>Inspired by you – the community – through your actions and stories.</p>
+      <p><span class="highlight">●</span> <b>Everyone is welcome!</b> Hacktoberfest participants
+        have represented 151 countries and thousands of unique skill sets. Our
+        program welcomes everyone already in the open source software community – and
+        anyone interested in diving in.</p>
+      <p><span class="highlight">●</span> <b>Quantity is fun, quality is key!</b> Participating
+        in Hacktoberfest leads to personal growth, professional opportunities, and
+        community building. And it all begins with meaningful contributions to
+        open source technology.</p>
+      <p><span class="highlight">●</span> <b>Short-term actions, long-term impact!</b> In the
+        open source community, we stand on the shoulders of those who came before
+        us. Your participation has a lasting effect on people and technology long
+        after October comes to an end. This is a voyage, not a race.</p>
+    </div>
+
+    <div class="container details">
+      <h1 id="spam" class="title is-1"><a href="#spam">Let’s work together to reduce spam</a></h1>
+      <p>
+        <span class="highlight">●</span> <b>Spammy PRs can be labeled as “invalid.” </b>
+        Maintainers are faced with the majority of spam that occurs during Hacktoberfest, and we dislike spam just as
+        much as you. If you’re a maintainer, please label any spammy PRs submitted to the repositories you maintain as
+        <b>invalid</b>, and close them. PRs with this label won't count toward Hacktoberfest.
+      </p>
+      <p>
+        <span class="highlight">●</span> <b>There’s a seven-day review window for PRs. </b>
+        This year, we've implemented a new seven-day grace period that all PRs for Hacktoberfest must go through before
+        they count toward completing the challenge. Once a participant has submitted four eligible PRs (ready-to-review,
+        not drafts), the review window begins. This period gives maintainers time to identify and label spammy PRs as
+        <b>invalid</b>. If the PRs are not marked <b>invalid</b> within that window, they will allow the user to
+        complete the Hacktoberfest challenge. If any of the PRs are labeled as <b>invalid</b>, however, the user will
+        return to the pending state until they have four eligible PRs, at which point the review period will then start
+        again.
+      </p>
+      <p>
+        <span class="highlight">●</span> <b>Bad repositories will be excluded. </b>
+        In the past, we've seen many repositories that encourage participants to make simple PRs – such as adding their
+        name to a file – to quickly gain a PR toward winning Hacktoberfest. While this may be a learning tool for new
+        contributors, it goes against one of our core values for Hacktoberfest. The quality of pull requests is
+        paramount; quantity comes second. These repositories do not encourage quality contributions and provide an
+        unfair advantage in completing the Hacktoberfest challenge. This year, we've implemented a system to block these
+        repositories, and any pull requests submitted to such repositories will not be counted. If you’d like to report
+        a repository, please fill out the form linked below.
+      </p> <p><a class="button button-small" href="https://github.com/login/oauth/authorize?client_id=4d945c76b71f8d38c871&amp;redirect_uri=https%3A%2F%2Fhacktoberfest.digitalocean.com%2Fauth%2Fgithub%2Fcallback&amp;response_type=code&amp;scope=user%3Aemail&amp;state=b540fe4389820453d5c97db0d90ad1cd54645f26f0eb45c3">Report a repository</a> </p>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <footer class="footer">
+    <div class="social level">
+      <div class="level-left">
+        <div class="line-br">
+          <span class="line-br-1">-</span>
+          <span class="line-br-2">-</span>
+        </div>
+        <h2 class="title is-2">Spread the word!</h2>
+        <div class="footer-social-links">
+          <a class="grow-shadow" href="https://www.facebook.com/sharer/sharer.php?u=https://hacktoberfest.digitalocean.com/">
+            <svg width="19" height="37" viewBox="0 0 19 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.41406 36.5H12.0234V20.3984H17.1562L18 14H12.0234V9.57031C12.0234 8.58594 12.1641 7.8125 12.5859 7.32031C13.0078 6.75781 13.9219 6.47656 15.1875 6.47656H18.5625V0.78125C17.2969 0.640625 15.6094 0.5 13.6406 0.5C11.1094 0.5 9.14062 1.27344 7.66406 2.75C6.11719 4.22656 5.41406 6.26562 5.41406 8.9375V14H0V20.3984H5.41406V36.5Z" fill="white"/>
+</svg>
+
+            <span>Facebook</span>
+          </a>
+          <a class="grow-shadow" href="https://ctt.ac/c5WeF">
+          <svg width="36" height="31" viewBox="0 0 36 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M32.2734 8.1875C33.6797 7.13281 34.9453 5.86719 36 4.32031C34.5938 4.95312 33.1875 5.375 31.7812 5.51562C33.3281 4.53125 34.4531 3.19531 35.0156 1.4375C33.5391 2.28125 31.9922 2.91406 30.3047 3.19531C29.6016 2.49219 28.7578 1.92969 27.8438 1.50781C26.9297 1.08594 25.9453 0.875 24.8906 0.875C23.5547 0.875 22.3594 1.22656 21.2344 1.85938C20.1094 2.5625 19.1953 3.47656 18.5625 4.60156C17.8594 5.72656 17.5781 6.99219 17.5781 8.25781C17.5781 8.82031 17.5781 9.38281 17.7188 9.94531C14.6953 9.80469 11.8828 9.10156 9.21094 7.69531C6.53906 6.35938 4.35938 4.53125 2.53125 2.21094C1.82812 3.40625 1.47656 4.67188 1.47656 5.9375C1.47656 7.20312 1.75781 8.39844 2.39062 9.45312C2.95312 10.5781 3.79688 11.4219 4.78125 12.125C3.58594 12.125 2.46094 11.7734 1.47656 11.1406V11.2812C1.47656 13.0391 2.03906 14.5859 3.16406 15.9219C4.28906 17.3281 5.69531 18.1719 7.38281 18.5234C6.67969 18.6641 6.04688 18.7344 5.41406 18.7344C4.99219 18.7344 4.5 18.7344 4.07812 18.6641C4.5 20.1406 5.34375 21.3359 6.60938 22.3203C7.875 23.3047 9.28125 23.7266 10.9688 23.7266C8.22656 25.8359 5.13281 26.8906 1.75781 26.8906C1.05469 26.8906 0.492188 26.8906 0 26.8203C3.375 29.0703 7.17188 30.125 11.3203 30.125C15.6094 30.125 19.4062 29.0703 22.7812 26.8203C25.8047 24.8516 28.1953 22.25 29.8828 18.875C31.5 15.7812 32.3438 12.4766 32.3438 9.10156C32.3438 8.67969 32.2734 8.39844 32.2734 8.1875Z" fill="white"/>
+</svg>
+
+            <span>Twitter</span>
+          </a>
+        </div>
+      </div>
+      <div class="level-right">
+          <img id="footer-logo" src="assets/logo-hf19-full-10f3c000cea930c76acc1dedc516ea7118b95353220869a3051848e45ff1d656.svg" alt="Hacktoberfest Logo">
+      </div>
+    </div>
+    <div class="footer-end">
+      <div class="footer-logos">
+      <a href="https://www.digitalocean.com/"><img src="assets/do-footer-logo-30ab9883fb2ecbc97a13bcae3d86e7b4b673d299f56138773c57066ff54250af.svg" alt="DigitalOcean Logo" ></a>
+      <p> + </p>
+      <a href="https://www.dev.to/"><img class="dev-logo" src="assets/dev-footer-logo-ea477fc64b6fa2c8164f710a4b42b450d80cf53b7607322647c2ae7c2a04ada0.svg" alt="Dev Logo"></a>
+      </div>
+      <p>© 2019 DigitalOcean, LLC. All rights reserved.</p>
+    </div>
+</footer>
+
+  <!-- Header Logo Tilt -->
+  <script type="text/javascript">
+  	VanillaTilt.init(document.getElementById("header-logo"), {
+  		max: 5,
+  		speed: 300
+    });
+    // <!-- Footer Logo Tilt -->
+  	VanillaTilt.init(document.getElementById("footer-logo"), {
+  		max: 7,
+  		speed: 300
+  	});
+  </script>
+
+    <script type="text/javascript">
+      window.cookieDomain = ".digitalocean.com";
+    </script>
+
+  <script src="../assets.digitalocean.com/cookieConsent/cookieConsent.js"></script>
+
+    <script>
+      window.addEventListener('cookieconsent_statuschange', function(e) {
+        if(e.detail.status === 'deny') { return; }
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KHWBBT');
+      });
+    </script>
+
+  </body>
+
+<!-- Mirrored from hacktoberfest.digitalocean.com/details by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Oct 2019 06:07:57 GMT -->
+</html>

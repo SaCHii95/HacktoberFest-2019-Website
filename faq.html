@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from hacktoberfest.digitalocean.com/faq by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Oct 2019 06:08:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Hacktoberfest presented by DigitalOcean and DEV</title>
+    <meta charset="utf-8">
+    <meta name="title" content="Hacktoberfest presented by DigitalOcean and DEV">
+    <meta name="description" content="Open source is changing the world – one pull request at a time.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@hacktoberfest">
+    <meta name="twitter:creator" content="@hacktoberfest">
+    <meta name="twitter:title" content="Hacktoberfest presented by DigitalOcean and DEV">
+    <meta name="twitter:image" content="assets/HF19_social-744d976f227e4aff6866443abcede8c651b309ec9c7c9f7410f5944f8e1299b9.png">
+    <meta name="twitter:url" content="index.html">
+    <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Hacktoberfest presented by DigitalOcean and DEV">
+    <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website">
+    <meta prefix="og: http://ogp.me/ns#" property="og:locale" content="en_US">
+    <meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="Hacktoberfest">
+    <meta prefix="og: http://ogp.me/ns#" property="og:description" content="Open source is changing the world – one pull request at a time.">
+    <meta prefix="og: http://ogp.me/ns#" property="og:url" content="index.html">
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="assets/HF19_social-744d976f227e4aff6866443abcede8c651b309ec9c7c9f7410f5944f8e1299b9.png">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon-2e022469fd44e4816b264a368d0457329a08b173aa768ce74d7e48f1036142e3.png" />
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="3R4qY3/kb6WfS1M/CXD6YgOUui8gdE2nD2nHD2fcCvhll/LLu3PeB/vfYif/sEhknzoMXFXAouqicrXoncBBag==" />
+    
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link rel="stylesheet" media="all" href="assets/application-e322e2f366acd2bcf419e7cdf6de873f46eb8183cb50bac4660aae0151d57ca2.css" data-turbolinks-track="reload" />
+    <link rel="stylesheet" href="../assets.digitalocean.com/cookieConsent/cookieConsent.css">
+    <script src="assets/application-801ef95c353c41e2ecec1962fe68236055c4b97dc8adc9792324196076bb12b6.js"></script>
+    <script>
+  var airbrake = new airbrakeJs.Client({
+    projectId: "244344",
+    projectKey: "706287fc6c288d10169d2a8d38577941"
+  });
+
+  airbrake.addFilter(function(notice) {
+    notice.context.environment = "production";
+    return notice;
+  });
+</script>
+    <script>
+    !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+    analytics.load('on5tkWRozncTh5P5dyA1cVsyrkGgvpvU', (document.cookie.indexOf('cookieconsent_status=dismiss') > -1 ? {} : { integrations: { All: false, 'Segment.io': true}}));
+    analytics.page();
+    }}();
+</script>
+
+  </head>
+  <body>
+  <div class="top-bgs">
+    <header>
+  <nav class="navbar" id="navbar">
+    <a href="index.html"><img id="header-logo" src="assets/logo-hf19-header-8245176fe235ab5d942c7580778a914110fa06a23c3d55bf40e2d061809d8785.svg" alt="Hacktoberfest Logo" width="475" ></a>
+    <ul class="navbar-end">
+      <li><a class=" navLink" href="index.html">home</a></li>
+      <li><a class=" navLink" href="details.html">details</a></li>
+      <li class="dropdown is-hoverable">
+        <div class="dropdown-trigger">
+          <a class=" navLink" href="events.html">Events</a>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+          <div class="dropdown-content">
+            <a class="dropdown-item navLink" href="events.html">view all events</a>
+            <hr class="dropdown-divider">
+            <a class="dropdown-item navLink" href="eventkit.html">event kit</a>
+          </div>
+        </div>
+      </li>
+      <li><a class="active navLink" href="faq.html">faqs</a></li>
+        <li><a class="button button-small navLink" href="https://github.com/login/oauth/authorize?client_id=4d945c76b71f8d38c871&amp;redirect_uri=https%3A%2F%2Fhacktoberfest.digitalocean.com%2Fauth%2Fgithub%2Fcallback&amp;response_type=code&amp;scope=user%3Aemail&amp;state=b6f35a9521e919c63caa74d7428d3e2c90cf9a530b29973d">start hacking</a></li>
+    </ul>
+  </nav>
+</header>
+
+    <main class="section is-fluid fluid-content-page">
+  <h1 class="title is-1">What is Hacktoberfest?</h1>
+  <p>Have questions? These are the most Frequently Asked Questions about Hacktoberfest.</p>
+  <section class="faq-toc">
+    <p class="title is-5">Jump to:</p>
+    <ul id="tabs" class="">
+      <li>
+        <a class="is-size-5" href="#general">General</a>
+      </li>
+      <li>
+        <a class="is-size-5" href="#rules">Rules</a>
+      </li>
+      <li>
+        <a class="is-size-5" href="#events">Events</a>
+      </li>
+      <li>
+        <a class="is-size-5" href="#shipping">Shipping</a>
+      </li>
+    </ul>
+  </section>
+
+  <div class="qa-section">
+    <a name="general">
+      <h2 class="title is-2 highlight">General </h2>
+    </a>
+      <div class="question-answer">
+        <div class="question"><p>What is Hacktoberfest?</p>
+</div>
+        <div class="answer"> <p>Hacktoberfest is a month-long celebration of open source software run by DigitalOcean and DEV.</p>
+
+<ul>
+  <li>Hacktoberfest is open to everyone in our global community.</li>
+  <li>To participate, four pull requests must be submitted to public GitHub repositories.</li>
+  <li>You can sign up anytime between October 1 and October 31.</li>
+</ul>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>How do I get started?</p>
+</div>
+        <div class="answer"> <p>First, register at <a href="index.html">hacktoberfest.digitalocean.com</a>. Then, submit at least four PRs to any public GitHub repository. You can look for <a href="https://github.com/search?l=&amp;o=desc&amp;q=label%3Ahacktoberfest+state%3Aopen&amp;s=updated&amp;type=Issues">open issues labeled <strong>Hacktoberfest</strong></a> for inspiration. Quality contributions are encouraged!</p>
+
+<p>Are you maintaining a repo? Create issues or label existing ones with <strong>Hacktoberfest</strong> on your GitHub projects to help new contributors know what to work on. Tag any spam or irrelevant PRs with the <strong>invalid</strong> label to disqualify them.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>How do I track my progress?</p>
+</div>
+        <div class="answer"> <p>Log in with your GitHub account at <a href="index.html">hacktoberfest.digitalocean.com</a> to check your progress and stats.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>I completed four PRs. When will I receive my T-shirt?</p>
+</div>
+        <div class="answer"> <p>T-shirts will be awarded on a first-come, first-serve basis to the first 50,000 participants who successfully complete the Hacktoberfest challenge. We’ll start sending out emails with more details on redeeming T-shirts throughout the month, so stay tuned.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>How do I get stickers?</p>
+</div>
+        <div class="answer"> <p>Stickers are included with your T-shirt after completing four PRs.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>What happens if I complete fewer than four PRs by the end of the month?</p>
+</div>
+        <div class="answer"> <p>Unfortunately, you will have to submit at least four PRs to get a T-shirt.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>As a maintainer, how should I handle spam PRs?</p>
+</div>
+        <div class="answer"> <p>We don’t like seeing spam PRs just as much as you, so please give them an <strong>invalid</strong> label and close them. PRs with an <strong>invalid</strong> label won’t be counted toward Hacktoberfest.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>As a maintainer, how do I encourage contributions to my repos?</p>
+</div>
+        <div class="answer"> <p>Create issues for anything you’d like contributors to help with, making sure to give them a <strong>Hacktoberfest</strong> label so they’re easier to discover.</p>
+
+<p>You can also share issues or repositories on Twitter, using <a href="https://twitter.com/hashtag/hacktoberfest">#Hacktoberfest</a> where we’ll retweet as many as we can for contributors to see.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>My draft pull requests don’t seem to be counting toward Hacktoberfest. What’s going on?</p>
+</div>
+        <div class="answer"> <p>For Hacktoberfest, pull requests on GitHub will not be counted until they are marked as <strong>ready for review</strong>: those marked as <strong>draft</strong> will not be counted. Please make sure to relabel any draft PRs as ready for review so that project maintainers can merge them.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>My pull request was labeled as invalid by a maintainer, why doesn’t it count?</p>
+</div>
+        <div class="answer"> <p>If a repository maintainer decides a pull request you made was spammy or an unhelpful contribution to the project, they can add an <strong>invalid</strong> label to your PR. This lets us know they do not think your pull request is a quality contribution, so it will not count toward Hacktoberfest.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>My PR was labeled as invalid, but it isn’t. What should I do?</p>
+</div>
+        <div class="answer"> <p>If a maintainer labels your pull request as invalid, but you don’t believe this is correct, please begin a conversation with the maintainer within the PR and explain your position.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>My pull request is marked as being on an excluded repository. What does this mean?</p>
+</div>
+        <div class="answer"> <p>Unfortunately, your pull request was made on a repository that doesn’t align with the core values of Hacktoberfest. We’ve decided that pull requests made to this repository will not count toward completing the challenge.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>Why is my pull request in a maturing state on my profile?</p>
+</div>
+        <div class="answer"> <p>In an effort to reduce spam and help maintainers, we’ve introduced a one-week review period for all pull requests. Once you have submitted four eligible PRs (ready-to-review, not drafts), the seven-day review window begins. This period gives maintainers time to identify and label any spammy PRs as <strong>invalid</strong>. If your PRs are not marked invalid during that window, they will allow you to complete the Hacktoberfest challenge. If during this period any of your PRs are labeled as <strong>invalid</strong>, you will return to the pending state until you have four eligible PRs, at which point the review period will start again.</p>
+</div>
+      </div>
+  </div>
+  <div class="qa-section">
+    <a name="rules">
+      <h2 class="title is-2 highlight">Rules</h2>
+    </a>
+      <div class="question-answer">
+        <div class="question"><p>Do contributions made outside of GitHub count?</p>
+</div>
+        <div class="answer"> <p>No, PRs must be made on the GitHub platform.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>Do issues/commits count?</p>
+</div>
+        <div class="answer"> <p>No, only PRs count.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>I signed up for Hacktoberfest mid-October. Will PRs that I created earlier in October count?</p>
+</div>
+        <div class="answer"> <p>Yes, all pull requests created between Oct. 1 and Oct. 31 will count, regardless of when you register for Hacktoberfest. Pull requests created before Oct. 1 but merged after do not count.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>Do issues have to be labeled Hacktoberfest to count?</p>
+</div>
+        <div class="answer"> <p>No, any pull request made on a public repository counts, whether it’s attached to a <a href="https://github.com/search?l=&amp;o=desc&amp;q=label%3Ahacktoberfest+state%3Aopen&amp;s=updated&amp;type=Issues">Hacktoberfest issue</a> or not.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>Do PRs made on my own repos count?</p>
+</div>
+        <div class="answer"> <p>Yes, but we strongly encourage you to make quality contributions to other repositories.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>Can I make PRs to issues/repos that are not listed on the homepage?</p>
+</div>
+        <div class="answer"> <p>Yes, any public GitHub repo is good for Hacktoberfest.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>Do multiple PRs to the same repo count?</p>
+</div>
+        <div class="answer"> <p>Yes, each pull request will count separately.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>Do PRs have to be accepted/merged?</p>
+</div>
+        <div class="answer"> <p>No, they will still count unless they are spam, irrelevant, or labeled as <strong>invalid</strong>.</p>
+</div>
+      </div>
+  </div>
+  <div class="qa-section">
+    <a name="events">
+      <h2 class="title is-2 highlight">Events </h2>
+    </a>
+      <div class="question-answer">
+        <div class="question"><p>How can I host a Hacktoberfest event?</p>
+</div>
+        <div class="answer"> <p>See the Hacktoberfest Event Organizer Kit: <a href="eventkit.html">hacktoberfest.digitalocean.com/eventkit</a></p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>Can you help me promote my Hacktoberfest event?</p>
+</div>
+        <div class="answer"> <p>Tell us about your event: <a href="eventkit.html#form">hacktoberfest.digitalocean.com/eventkit#form</a> and we’ll add it to <a href="index.html">hacktoberfest.digitalocean.com</a>!</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>Will Hacktoberfest T-shirts be given out at events?</p>
+</div>
+        <div class="answer"> <p>No, Hacktoberfest T-shirts will be mailed to participants who make four PRs on Github between October 1 and October 31.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>I’d like some credits for my Hacktoberfest meetup/event attendees. Can you give me some?</p>
+</div>
+        <div class="answer"> <p>Feel free to share the following link with your attendees along with this wording:
+“New to DigitalOcean? Receive USD $50 in infrastructure credit at https://do.co/hacktoberfest_2019.”</p>
+
+<p>Note that the free credit only applies to users who are new to DigitalOcean, and requires a valid credit card.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>I’d like to speak/demo at a Hacktoberfest event. Can you give me free infrastructure credit?</p>
+</div>
+        <div class="answer"> <p>Great! Please tell us more about your demo at <a href="https://www.digitalocean.com/droplets-for-demos/">www.digitalocean.com/droplets-for-demos/</a> and we’ll get back to you soon.</p>
+</div>
+      </div>
+  </div>
+  <div class="qa-section">
+    <a name="shipping">
+      <h2 class="title is-2 highlight">Shipping </h2>
+    </a>
+      <div class="question-answer">
+        <div class="question"><p>Will I have to pay anything to receive my T-shirt/stickers?</p>
+</div>
+        <div class="answer"> <p>T-shirts are free of charge for participants, including shipping costs.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>I didn’t receive my Hacktoberfest 2018 T-shirt/swag.</p>
+</div>
+        <div class="answer"> <p>We are no longer printing 2018 T-shirts. If you did not receive your T-shirt, this means we tried to deliver multiple times unsuccessfully. We are working hard on improving the shipping process this year so that everyone receives their T-shirts. Thank you for your understanding.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>Will I have to pay anything/custom tax/duty for the T-shirt?</p>
+</div>
+        <div class="answer"> <p>We write down a low enough dollar value on the mailed packages that we don’t expect any issues with customs tax, but we cannot guarantee that – you might have to pay a small fee depending on your country’s import policies.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>When will my T-shirt be shipped? (International)</p>
+</div>
+        <div class="answer"> <p>You will receive an email once your T-shirt is shipped. It can take up to 3-5 weeks after shipment for international orders to be delivered. We intend to ship all shirts by the end of the first week of November this year.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>When will my T-shirt be shipped? (United States)</p>
+</div>
+        <div class="answer"> <p>You will receive an email once your T-shirt is shipped. It can take up to 1-2 weeks after shipment for orders within the U.S. to be delivered. We intend to ship all shirts by the end of the first week of November this year.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>How do I return or exchange an item?</p>
+</div>
+        <div class="answer"> <p>If you believe your order was shipped incorrectly, contact us with the order number from the email subject line, plus an explanation of the incorrect item you received. Otherwise, if it’s still within 30 days of the original purchase, follow the instructions at <a href="https://kotisdesign.com/returns">kotisdesign.com/returns</a>. You will be responsible for shipping the item back to us.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>Tracking for my order is not active, is my tracking number correct?</p>
+</div>
+        <div class="answer"> <p>You may receive a tracking email 2-3 days before tracking becomes active on DHL’s website. Try again in a few days.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>My international order is delayed. What can I do?</p>
+</div>
+        <div class="answer"> <p>We recommend contacting DHL in your country for help with clearing the package: <a href="http://www.dhl.com/en/contact_center/contact_parcel_ecommerce.html">www.dhl.com/en/contact_center/contact_parcel_ecommerce.html</a>.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>What countries do you ship to?</p>
+</div>
+        <div class="answer"> <p>We are able to ship to all countries with the exception of the following: Cuba, Iran, Libya, North Korea, Sierra Leone, Somalia, Sudan, Syria, and Yemen.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>What T-shirt size should I order?</p>
+</div>
+        <div class="answer"> <p>You can reference the size charts for the T-shirts on the ordering page. Both size charts include measurements in inches, and instructions for how to measure yourself.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>How do I change my T-shirt size?</p>
+</div>
+        <div class="answer"> <p>Please email <a href="mailto:hacktoberfest@digitalocean.com">Hacktoberfest@DigitalOcean.com</a> within two days of placing your order. Please include your order number and the T-shirt size you’d like and we’ll get that updated for you.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>How do I change my email address?</p>
+</div>
+        <div class="answer"> <p>If you are unable to access the email address you used to place your order, please provide us with a new email address and your order number so we can update your order information. You can email <a href="mailto:hacktoberfest@digitalocean.com">Hacktoberfest@DigitalOcean.com</a> with your new information.</p>
+</div>
+      </div>
+      <div class="question-answer">
+        <div class="question"><p>Did my T-shirt order go through?</p>
+</div>
+        <div class="answer"> <p>If you did not receive an order confirmation email within an hour of placing your order, we can look up your order using the email address you used. Please check your spam or junk folders first and if it’s not there, send us an email to <a href="mailto:hacktoberfest@digitalocean.com">Hacktoberfest@DigitalOcean.com</a> to confirm your T-shirt order.</p>
+</div>
+      </div>
+  </div>
+</main>
+
+  </div>
+  <footer class="footer">
+    <div class="social level">
+      <div class="level-left">
+        <div class="line-br">
+          <span class="line-br-1">-</span>
+          <span class="line-br-2">-</span>
+        </div>
+        <h2 class="title is-2">Spread the word!</h2>
+        <div class="footer-social-links">
+          <a class="grow-shadow" href="https://www.facebook.com/sharer/sharer.php?u=https://hacktoberfest.digitalocean.com/">
+            <svg width="19" height="37" viewBox="0 0 19 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.41406 36.5H12.0234V20.3984H17.1562L18 14H12.0234V9.57031C12.0234 8.58594 12.1641 7.8125 12.5859 7.32031C13.0078 6.75781 13.9219 6.47656 15.1875 6.47656H18.5625V0.78125C17.2969 0.640625 15.6094 0.5 13.6406 0.5C11.1094 0.5 9.14062 1.27344 7.66406 2.75C6.11719 4.22656 5.41406 6.26562 5.41406 8.9375V14H0V20.3984H5.41406V36.5Z" fill="white"/>
+</svg>
+
+            <span>Facebook</span>
+          </a>
+          <a class="grow-shadow" href="https://ctt.ac/c5WeF">
+          <svg width="36" height="31" viewBox="0 0 36 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M32.2734 8.1875C33.6797 7.13281 34.9453 5.86719 36 4.32031C34.5938 4.95312 33.1875 5.375 31.7812 5.51562C33.3281 4.53125 34.4531 3.19531 35.0156 1.4375C33.5391 2.28125 31.9922 2.91406 30.3047 3.19531C29.6016 2.49219 28.7578 1.92969 27.8438 1.50781C26.9297 1.08594 25.9453 0.875 24.8906 0.875C23.5547 0.875 22.3594 1.22656 21.2344 1.85938C20.1094 2.5625 19.1953 3.47656 18.5625 4.60156C17.8594 5.72656 17.5781 6.99219 17.5781 8.25781C17.5781 8.82031 17.5781 9.38281 17.7188 9.94531C14.6953 9.80469 11.8828 9.10156 9.21094 7.69531C6.53906 6.35938 4.35938 4.53125 2.53125 2.21094C1.82812 3.40625 1.47656 4.67188 1.47656 5.9375C1.47656 7.20312 1.75781 8.39844 2.39062 9.45312C2.95312 10.5781 3.79688 11.4219 4.78125 12.125C3.58594 12.125 2.46094 11.7734 1.47656 11.1406V11.2812C1.47656 13.0391 2.03906 14.5859 3.16406 15.9219C4.28906 17.3281 5.69531 18.1719 7.38281 18.5234C6.67969 18.6641 6.04688 18.7344 5.41406 18.7344C4.99219 18.7344 4.5 18.7344 4.07812 18.6641C4.5 20.1406 5.34375 21.3359 6.60938 22.3203C7.875 23.3047 9.28125 23.7266 10.9688 23.7266C8.22656 25.8359 5.13281 26.8906 1.75781 26.8906C1.05469 26.8906 0.492188 26.8906 0 26.8203C3.375 29.0703 7.17188 30.125 11.3203 30.125C15.6094 30.125 19.4062 29.0703 22.7812 26.8203C25.8047 24.8516 28.1953 22.25 29.8828 18.875C31.5 15.7812 32.3438 12.4766 32.3438 9.10156C32.3438 8.67969 32.2734 8.39844 32.2734 8.1875Z" fill="white"/>
+</svg>
+
+            <span>Twitter</span>
+          </a>
+        </div>
+      </div>
+      <div class="level-right">
+          <img id="footer-logo" src="assets/logo-hf19-full-10f3c000cea930c76acc1dedc516ea7118b95353220869a3051848e45ff1d656.svg" alt="Hacktoberfest Logo">
+      </div>
+    </div>
+    <div class="footer-end">
+      <div class="footer-logos">
+      <a href="https://www.digitalocean.com/"><img src="assets/do-footer-logo-30ab9883fb2ecbc97a13bcae3d86e7b4b673d299f56138773c57066ff54250af.svg" alt="DigitalOcean Logo" ></a>
+      <p> + </p>
+      <a href="https://www.dev.to/"><img class="dev-logo" src="assets/dev-footer-logo-ea477fc64b6fa2c8164f710a4b42b450d80cf53b7607322647c2ae7c2a04ada0.svg" alt="Dev Logo"></a>
+      </div>
+      <p>© 2019 DigitalOcean, LLC. All rights reserved.</p>
+    </div>
+</footer>
+
+  <!-- Header Logo Tilt -->
+  <script type="text/javascript">
+  	VanillaTilt.init(document.getElementById("header-logo"), {
+  		max: 5,
+  		speed: 300
+    });
+    // <!-- Footer Logo Tilt -->
+  	VanillaTilt.init(document.getElementById("footer-logo"), {
+  		max: 7,
+  		speed: 300
+  	});
+  </script>
+
+    <script type="text/javascript">
+      window.cookieDomain = ".digitalocean.com";
+    </script>
+
+  <script src="../assets.digitalocean.com/cookieConsent/cookieConsent.js"></script>
+
+    <script>
+      window.addEventListener('cookieconsent_statuschange', function(e) {
+        if(e.detail.status === 'deny') { return; }
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KHWBBT');
+      });
+    </script>
+
+  </body>
+
+<!-- Mirrored from hacktoberfest.digitalocean.com/faq by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Oct 2019 06:08:03 GMT -->
+</html>

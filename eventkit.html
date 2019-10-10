@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from hacktoberfest.digitalocean.com/eventkit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Oct 2019 06:08:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Hacktoberfest presented by DigitalOcean and DEV</title>
+    <meta charset="utf-8">
+    <meta name="title" content="Hacktoberfest presented by DigitalOcean and DEV">
+    <meta name="description" content="Open source is changing the world – one pull request at a time.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@hacktoberfest">
+    <meta name="twitter:creator" content="@hacktoberfest">
+    <meta name="twitter:title" content="Hacktoberfest presented by DigitalOcean and DEV">
+    <meta name="twitter:image" content="assets/HF19_social-744d976f227e4aff6866443abcede8c651b309ec9c7c9f7410f5944f8e1299b9.png">
+    <meta name="twitter:url" content="index.html">
+    <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Hacktoberfest presented by DigitalOcean and DEV">
+    <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website">
+    <meta prefix="og: http://ogp.me/ns#" property="og:locale" content="en_US">
+    <meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="Hacktoberfest">
+    <meta prefix="og: http://ogp.me/ns#" property="og:description" content="Open source is changing the world – one pull request at a time.">
+    <meta prefix="og: http://ogp.me/ns#" property="og:url" content="index.html">
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="assets/HF19_social-744d976f227e4aff6866443abcede8c651b309ec9c7c9f7410f5944f8e1299b9.png">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon-2e022469fd44e4816b264a368d0457329a08b173aa768ce74d7e48f1036142e3.png" />
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="6OPAQACZw6EIC+CvPhyry5kTzC5Wjrvj1wnzlPWcd8NQahjoxA5yA2yf0bfI3BnNBb16XSM6VK56EoFzD4A8UQ==" />
+    
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link rel="stylesheet" media="all" href="assets/application-e322e2f366acd2bcf419e7cdf6de873f46eb8183cb50bac4660aae0151d57ca2.css" data-turbolinks-track="reload" />
+    <link rel="stylesheet" href="../assets.digitalocean.com/cookieConsent/cookieConsent.css">
+    <script src="assets/application-801ef95c353c41e2ecec1962fe68236055c4b97dc8adc9792324196076bb12b6.js"></script>
+    <script>
+  var airbrake = new airbrakeJs.Client({
+    projectId: "244344",
+    projectKey: "706287fc6c288d10169d2a8d38577941"
+  });
+
+  airbrake.addFilter(function(notice) {
+    notice.context.environment = "production";
+    return notice;
+  });
+</script>
+    <script>
+    !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+    analytics.load('on5tkWRozncTh5P5dyA1cVsyrkGgvpvU', (document.cookie.indexOf('cookieconsent_status=dismiss') > -1 ? {} : { integrations: { All: false, 'Segment.io': true}}));
+    analytics.page();
+    }}();
+</script>
+
+  </head>
+  <body>
+  <div class="top-bgs">
+    <header>
+  <nav class="navbar" id="navbar">
+    <a href="index.html"><img id="header-logo" src="assets/logo-hf19-header-8245176fe235ab5d942c7580778a914110fa06a23c3d55bf40e2d061809d8785.svg" alt="Hacktoberfest Logo" width="475" ></a>
+    <ul class="navbar-end">
+      <li><a class=" navLink" href="index.html">home</a></li>
+      <li><a class=" navLink" href="details.html">details</a></li>
+      <li class="dropdown is-hoverable">
+        <div class="dropdown-trigger">
+          <a class="active navLink" href="events.html">Events</a>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+          <div class="dropdown-content">
+            <a class="dropdown-item navLink" href="events.html">view all events</a>
+            <hr class="dropdown-divider">
+            <a class="dropdown-item navLink" href="eventkit.html">event kit</a>
+          </div>
+        </div>
+      </li>
+      <li><a class=" navLink" href="faq.html">faqs</a></li>
+        <li><a class="button button-small navLink" href="https://github.com/login/oauth/authorize?client_id=4d945c76b71f8d38c871&amp;redirect_uri=https%3A%2F%2Fhacktoberfest.digitalocean.com%2Fauth%2Fgithub%2Fcallback&amp;response_type=code&amp;scope=user%3Aemail&amp;state=9c08030d7469a9dd3a87b7c4e28e1554a98b78ddf0eb2046">start hacking</a></li>
+    </ul>
+  </nav>
+</header>
+
+    <div class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <iframe class="modal-card " src="https://airtable.com/embed/shrD5rVJ7kfZec5hD?backgroundColor=blue" frameborder="0"
+            onmousewheel="" width="100%" height="100%" style="background: transparent; border: 1px solid #ccc;"></iframe>
+  </div>
+  <button id='close-modal' class="modal-close">'x'</button>
+</div>
+
+<div class="section is-fluid event-kit-page">
+  <h1 class="highlight title is-1">Event Kit</h1>
+
+  <h2 id="how-to" class="title is-2 pink-highlight">How to organize a Hacktoberfest-themed meetup</h2>
+  <div class="underline-div"></div>
+
+  <h3 class="title is-3">Step-by-step</h3>
+  <div class="container">
+    <ol class="steps-list">
+      <li>Craft an event agenda.</li>
+      <li>
+        Set a date: Confirm that your preferred venue and any co-organizers, speakers, and facilitators are available.
+      </li>
+      <li>
+        Promote the event: Invite your community to attend. And don't forget to add your event <a href="#form">here</a>.
+      </li>
+      <li>
+        Facilitate the event: Create an open, inclusive, and welcoming atmosphere.
+      </li>
+      <li>
+        Share special moments on social media. (Please remember to ask attendees for permission to use their photos.)
+      </li>
+    </ol>
+
+    <h3 class="title is-3">Who to invite to the meetup</h3>
+    <p>Anyone interested in learning about and/or contributing to open source.</p>
+
+    <h3 class="title is-3">When's the best time to host your meetup?</h3>
+    <p>Preferably the first half of October to give participants time to complete four pull requests!</p>
+
+    <h3 class="title is-3">Where to host your event</h3>
+    <p>
+      An easily accessible, inclusive location with reliable WiFi and a comfortable space that is workshop- and
+      live-coding friendly. For example:
+    </p>
+    <ul>
+      <li>A classroom at a university or code school</li>
+      <li>A coworking space</li>
+      <li>An incubator/accelerator</li>
+      <li>An office of an open source/tech company</li>
+      <li>Anywhere that will have you!</li>
+    </ul>
+
+    <h3 class="title is-3">Sample agenda</h3>
+    <p>This is merely a suggestion — feel free to customize it to suit your community!</p>
+    <ul>
+      <li>
+        <span class="pink-highlight">Welcome</span> — Set a welcoming, open, and inclusive tone. Thank everyone for
+        attending, tell them about yourself, give an overview of the programming, and remind them of the
+        <a href="https://do.co/hacktoberconduct" target="_blank" rel="noopener noreferrer">code of conduct</a>.
+      </li>
+      <li>
+        <span class="pink-highlight">Intro to Hacktoberfest: the celebration, prizes, and instructions</span> — It's
+        important to mention the key points of Hacktoberfest. For example: "This is all about encouraging meaningful
+        contributions to the open source ecosystem — for beginners and veterans alike."
+      </li>
+      <li>
+        <span class="pink-highlight">Intro to open source</span> — See <a href="#resources">Resources</a> section for
+        inspiration.
+      </li>
+      <li>
+        <span class="pink-highlight">Workshop</span> — how to contribute to open source — See
+        <a href="#resources">Resources</a> section for inspiration.
+      </li>
+      <li>
+        <span class="pink-highlight">Demos [optional; before/after hack time]</span> — 3 to 5-minute demos by anyone
+        interested in sharing their open source projects.
+      </li>
+      <li>
+        <span class="pink-highlight">Hack time</span> — Facilitate the formation of groups by interest and hack
+        together.
+      </li>
+    </ul>
+
+    <h3 class="title is-3">Speakers &amp; facilitators</h3>
+    <p>
+      You and your co-organizers are encouraged to facilitate the workshops! (You got it!) If you’d like extra help,
+      invite open source project owners/maintainers, leaders passionate about open source, and computer science
+      educators who support open source in your community to speak or help with meetup attendees. If there is an open
+      source enthusiast in your community, reach out to them via email or on Twitter! The worst that can happen is
+      they’re not able to attend.
+    </p>
+
+    <h3 class="title is-3">Photo sharing</h3>
+    <p>
+      Encourage event participants to share photos on social media using the hashtag
+      <span class="css-13tjkz1">#hacktoberfest</span>. (Please be mindful of photo preferences of attendees — don’t
+      force camera-shy individuals into photos!)
+    </p>
+    <iframe class="instagram-media instagram-media-rendered" id="instagram-embed-0"
+            src="https://www.instagram.com/p/BvI1KyvBCbv/embed/?cr=1&amp;v=12&amp;wp=1100&amp;rd=https%3A%2F%2Fhacktoberfest.digitalocean.com&amp;rp=%2Feventkit#%7B%22ci%22%3A0%2C%22os%22%3A2941.715000080876%7D"
+            allowtransparency="true" allowfullscreen="true" frameborder="0" height="509"
+            data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" style="background: white; max-width: 550px; width: calc(100% - 2px);
+        border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none;
+        display: block; margin: 0px 0px 12px; min-width: 326px; min-height: 620px;     margin-left: auto;
+        margin-right: auto; margin-top: 10px;"></iframe>
+
+    <h3 class="title is-3">Food &amp; drinks</h3>
+    <p>
+      Provide something delicious that your community will enjoy! Bonus: one or two items that add a festive fall/autumn
+      or Oktoberfest mood. Remember to account for food allergies, preferences, and local alcohol consumption laws
+      (if alcohol is served).
+    </p>
+    <p>
+      If you don't plan on serving any food/drinks, that's OK too! Make that clear on your event invitation so guests
+      come prepared.
+    </p>
+
+    <h3 class="title is-3">Other fun ideas</h3>
+    <ul>
+      <li>First pull request of the evening to receive [insert prize].</li>
+      <li>Raffle off 3-5 prizes to be given away at the end of the evening.</li>
+      <li>Wrap up the event by inviting participants to share what they learned/worked on.</li>
+    </ul>
+
+    <h3 class="title is-3">Event code of conduct</h3>
+    <p>
+      Hacktoberfest events are welcoming, open, and inclusive. Include this line on your event page: "Please read our
+      <a href="https://do.co/hacktoberconduct" target="_blank" rel="noopener noreferrer">Events Code of Conduct</a>
+      before attending. Happy Hacking!"
+    </p>
+
+    <h2 id="promoting-your-event" class="title is-2 pink-highlight">Promoting your event</h2>
+    <div class="underline-div"></div>
+
+    <ol class="steps-list promote-list">
+      <li>
+        Share the event via email, social networks, and/or printed flyers. Consider posting on channels that are popular
+        with developers and open source enthusiasts in your area, including but not limited to:
+        <ul class="promote-links-list">
+          <li>Eventbrite</li>
+          <li>Meetup</li>
+          <li>Twitter</li>
+          <li>Facebook pages</li>
+          <li>LinkedIn groups</li>
+          <li>Google groups</li>
+          <li>Newsletters, websites, and social media accounts that share startup/tech events regularly</li>
+          <li>Local code schools and universities</li>
+        </ul>
+      </li>
+      <li><a href="#form">Add your meetup event here.</a></li>
+    </ol>
+
+    <h3 class="title is-3">Logos &amp; branding</h3>
+    <div class="columns is-multiline box">
+      <div class="column">
+        <h3 class="title is-3">Promote your event</h3>
+        <p class="box-text">Logos, banners, posters, and more!</p>
+        <a href="https://assets.digitalocean.com/hacktoberfest/hacktoberfest_2019_brand_assets.zip"
+           class="button down-load-assets">Download assets here</a>
+      </div>
+      <div class="secondary-box column">
+        <img class="grow-shadow" src="assets/HF19_event-125d758a102ab8e1e53bae921d83bde402862e0397cb389d6cc37eb054ffd6fa.png" alt="Example event">
+      </div>
+    </div>
+
+    <h3 class="title is-3">Sample copy for your event page</h3>
+    <div class="columns is-multiline box sample-section">
+      <div class="column sample-section">
+        <h4 class="title is-4">Event name ideas</h4>
+        <ul>
+          <li>Hacktoberfest Open Hack Night</li>
+          <li>Hacktoberfest Open Hack Day</li>
+          <li>Hacktoberfest in [Your City]</li>
+          <li>Hacktoberfest Open Hack Fest!</li>
+        </ul>
+
+        <h4 class="title is-4">Description</h4>
+        <p>It's Hacktoberfest 2019! Let's celebrate open source over
+          food, drinks, learning, and great company!</p>
+        <p>Agenda</p>
+        <p>[Time] [Topic]</p>
+        <p>[Time] [Topic]</p>
+        <p>[Time] [Topic]</p>
+        <p>[Time] [Topic]</p>
+
+        <h4 class="title is-4">What's Hacktoberfest?</h4>
+        <p>
+          <a href="index.html">Hacktoberfest — brought to you by DigitalOcean</a> in
+          partnership with DEV — is a month-long celebration of open source software. Maintainers are invited to guide
+          would-be contributors toward issues that will help move the project forward, and contributors get the
+          opportunity to give back to both projects they like and others they've just discovered. No contribution is too
+          small — bug fixes and documentation updates are valid ways of participating.
+        </p>
+        <p>
+          Can't make it to this event? Hacktoberfest is virtual and open to participants from around the globe. Sign up
+          to participate today at https://hacktoberfest.digitalocean.com.
+        </p>
+
+        <h4 class="title is-4">Rules and prizes</h4>
+        <p>
+          First, sign up on the Hacktoberfest site at https://hacktoberfest.digitalocean.com. To qualify for the
+          official limited edition Hacktoberfest shirt, you must register and make four pull requests between October
+          1-31. Pull requests can be to any public repo on GitHub, not just the ones with issues labeled Hacktoberfest.
+          If a maintainer reports your pull request as invalid or behavior not in line with the project’s code of
+          conduct, you will be ineligible to participate.
+        </p>
+        <p>
+          Connect with other Hacktoberfest participants by using #hacktoberfest on your social media platform of choice.
+        </p>
+        <p>
+          New to DigitalOcean? Receive USD $50 in infrastructure credit at https://do.co/hacktoberfest50.
+        </p>
+
+        <h4 class="title is-4">Events code of conduct</h4>
+        <p>
+          Hacktoberfest events are welcoming, open, and inclusive. Include this line on your event page: "Please read
+          our <a href="https://do.co/hacktoberconduct">Events Code of Conduct</a> before attending. Happy Hacking!"
+        </p>
+      </div>
+    </div>
+
+    <h2 id="resources" class="title is-2 pink-highlight">Resources</h2>
+    <div class="underline-div"></div>
+
+    <h3 class="title is-3">Git</h3>
+    <ul>
+      <li>
+        <a href="https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github">
+          How To Create a Pull Request on GitHub
+        </a>
+      </li>
+      <li>
+        <a href="https://github.github.com/training-kit/">GitHub Training Kit</a>: Open source slides, workbook, and
+        cheat sheet courseware for teaching Git and GitHub classes
+      </li>
+      <li>
+        <a href="https://guides.github.com/introduction/flow/">
+          Understanding the GitHub Flow</a>
+      </li>
+      <li>
+        <a href="http://patchwork.github.io/">Patchwork</a>: Casual, mentored workshops for beginners to Git and GitHub
+      </li>
+    </ul>
+
+    <h3 class="title is-3">Open source</h3>
+    <ul>
+      <li>
+        <a href="https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-source">
+          An Introduction to Open Source
+        </a>
+      </li>
+      <li><a href="https://opensource.guide/">Open Source Guides</a></li>
+      <li><a href="https://dev.to/t/opensource">Articles about open source</a></li>
+    </ul>
+
+    <h3 class="title is-3">Where to find open source projects to work on?</h3>
+    <ul>
+      <li><a href="https://help.github.com/articles/where-can-i-find-open-source-projects-to-work-on/">GitHub</a></li>
+      <li><a href="index.html#projects">Hacktoberfest</a></li>
+    </ul>
+    <p>
+      Find more resources and useful tips for participants on the
+      <a href="index.html#resources">Hacktoberfest site</a>.
+    </p>
+
+    <h3 class="title is-3">Event organizer webinar</h3>
+    <p>
+      Learn about best practices for planning and hosting a Hacktoberfest event, handling challenges you might face, and
+      creating a dynamic collaborative environment. <a href="https://youtu.be/IC-sCZrDz04">Watch our recent webinar</a>.
+    </p>
+
+    <h2 id="faqs" class="title is-2 pink-highlight">FAQs</h2>
+    <div class="underline-div"></div>
+
+    <h3 class="title is-3">Why organize a Hacktoberfest-themed meetup?</h3>
+    <ul>
+      <li>Increase awareness of open source in your community.</li>
+      <li>Enjoy contributing to open source in a social setting.</li>
+      <li>Meet project owners, maintainers, contributors, and community members in person.</li>
+      <li>
+        Learn about the open source ecosystem, from how to start an open source project to marketing your project,
+        sustaining growth, and troubleshooting and maintenance.
+      </li>
+    </ul>
+    <p>
+      <em>
+        Organizers: Set the tone for your event based on what most benefits your community! Feel free to focus on any
+        combination of the above and more!
+      </em>
+    </p>
+
+    <h3 class="title is-3">Who can organize a Hacktoberfest-themed meetup?</h3>
+    <p>
+      Anyone can, as long as you celebrate open source at the event and follow the
+      <a href="https://do.co/hacktoberconduct">Hacktoberfest Events Code of Conduct</a>!
+    </p>
+
+    <h3 class="title is-3">Will Hacktoberfest T-shirts be given out at the event?</h3>
+    <p>
+      No. A Hacktoberfest T-shirt will be mailed after Hacktoberfest ends to participants who make four successful pull
+      requests on GitHub between October 1 and October 31.
+    </p>
+
+    <h3 class="title is-3">How do I sign up for Hacktoberfest?</h3>
+    <p>
+      Register with your GitHub account at
+      <a href="index.html">hacktoberfest.digitalocean.com</a>.
+    </p>
+
+    <h3 class="title is-3">When can I start?</h3>
+    <p>You can sign up anytime between October 1 and October 31.</p>
+
+    <h3 class="title is-3">Who can participate in Hacktoberfest?</h3>
+    <p>Hacktoberfest is open to everyone in our global community!</p>
+
+    <h3 class="title is-3">What are the rules?</h3>
+    <p>
+      To win a shirt, you must sign up on the Hacktoberfest site and make four pull requests on GitHub by October 31st.
+      (Pull requests do not have to be merged and accepted; as long as they've been opened between the beginning of
+      October 1 and the very end of October 31, they count toward a free T-shirt.)
+    </p>
+
+    <h3 class="title is-3">Where can I make pull requests?</h3>
+    <p>Pull requests can be made in any GitHub-hosted repositories/projects.</p>
+    <p>Have questions?</p>
+    <p>
+      Get in touch with our team by sending an email to
+      <a href="mailto:hacktoberfestevents@digitalocean.com">hacktoberfestevents@digitalocean.com</a>.
+    </p>
+  </div>
+</div>
+
+  </div>
+  <footer class="footer">
+    <div class="social level">
+      <div class="level-left">
+        <div class="line-br">
+          <span class="line-br-1">-</span>
+          <span class="line-br-2">-</span>
+        </div>
+        <h2 class="title is-2">Spread the word!</h2>
+        <div class="footer-social-links">
+          <a class="grow-shadow" href="https://www.facebook.com/sharer/sharer.php?u=https://hacktoberfest.digitalocean.com/">
+            <svg width="19" height="37" viewBox="0 0 19 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.41406 36.5H12.0234V20.3984H17.1562L18 14H12.0234V9.57031C12.0234 8.58594 12.1641 7.8125 12.5859 7.32031C13.0078 6.75781 13.9219 6.47656 15.1875 6.47656H18.5625V0.78125C17.2969 0.640625 15.6094 0.5 13.6406 0.5C11.1094 0.5 9.14062 1.27344 7.66406 2.75C6.11719 4.22656 5.41406 6.26562 5.41406 8.9375V14H0V20.3984H5.41406V36.5Z" fill="white"/>
+</svg>
+
+            <span>Facebook</span>
+          </a>
+          <a class="grow-shadow" href="https://ctt.ac/c5WeF">
+          <svg width="36" height="31" viewBox="0 0 36 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M32.2734 8.1875C33.6797 7.13281 34.9453 5.86719 36 4.32031C34.5938 4.95312 33.1875 5.375 31.7812 5.51562C33.3281 4.53125 34.4531 3.19531 35.0156 1.4375C33.5391 2.28125 31.9922 2.91406 30.3047 3.19531C29.6016 2.49219 28.7578 1.92969 27.8438 1.50781C26.9297 1.08594 25.9453 0.875 24.8906 0.875C23.5547 0.875 22.3594 1.22656 21.2344 1.85938C20.1094 2.5625 19.1953 3.47656 18.5625 4.60156C17.8594 5.72656 17.5781 6.99219 17.5781 8.25781C17.5781 8.82031 17.5781 9.38281 17.7188 9.94531C14.6953 9.80469 11.8828 9.10156 9.21094 7.69531C6.53906 6.35938 4.35938 4.53125 2.53125 2.21094C1.82812 3.40625 1.47656 4.67188 1.47656 5.9375C1.47656 7.20312 1.75781 8.39844 2.39062 9.45312C2.95312 10.5781 3.79688 11.4219 4.78125 12.125C3.58594 12.125 2.46094 11.7734 1.47656 11.1406V11.2812C1.47656 13.0391 2.03906 14.5859 3.16406 15.9219C4.28906 17.3281 5.69531 18.1719 7.38281 18.5234C6.67969 18.6641 6.04688 18.7344 5.41406 18.7344C4.99219 18.7344 4.5 18.7344 4.07812 18.6641C4.5 20.1406 5.34375 21.3359 6.60938 22.3203C7.875 23.3047 9.28125 23.7266 10.9688 23.7266C8.22656 25.8359 5.13281 26.8906 1.75781 26.8906C1.05469 26.8906 0.492188 26.8906 0 26.8203C3.375 29.0703 7.17188 30.125 11.3203 30.125C15.6094 30.125 19.4062 29.0703 22.7812 26.8203C25.8047 24.8516 28.1953 22.25 29.8828 18.875C31.5 15.7812 32.3438 12.4766 32.3438 9.10156C32.3438 8.67969 32.2734 8.39844 32.2734 8.1875Z" fill="white"/>
+</svg>
+
+            <span>Twitter</span>
+          </a>
+        </div>
+      </div>
+      <div class="level-right">
+          <img id="footer-logo" src="assets/logo-hf19-full-10f3c000cea930c76acc1dedc516ea7118b95353220869a3051848e45ff1d656.svg" alt="Hacktoberfest Logo">
+      </div>
+    </div>
+    <div class="footer-end">
+      <div class="footer-logos">
+      <a href="https://www.digitalocean.com/"><img src="assets/do-footer-logo-30ab9883fb2ecbc97a13bcae3d86e7b4b673d299f56138773c57066ff54250af.svg" alt="DigitalOcean Logo" ></a>
+      <p> + </p>
+      <a href="https://www.dev.to/"><img class="dev-logo" src="assets/dev-footer-logo-ea477fc64b6fa2c8164f710a4b42b450d80cf53b7607322647c2ae7c2a04ada0.svg" alt="Dev Logo"></a>
+      </div>
+      <p>© 2019 DigitalOcean, LLC. All rights reserved.</p>
+    </div>
+</footer>
+
+  <!-- Header Logo Tilt -->
+  <script type="text/javascript">
+  	VanillaTilt.init(document.getElementById("header-logo"), {
+  		max: 5,
+  		speed: 300
+    });
+    // <!-- Footer Logo Tilt -->
+  	VanillaTilt.init(document.getElementById("footer-logo"), {
+  		max: 7,
+  		speed: 300
+  	});
+  </script>
+
+    <script type="text/javascript">
+      window.cookieDomain = ".digitalocean.com";
+    </script>
+
+  <script src="../assets.digitalocean.com/cookieConsent/cookieConsent.js"></script>
+
+    <script>
+      window.addEventListener('cookieconsent_statuschange', function(e) {
+        if(e.detail.status === 'deny') { return; }
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KHWBBT');
+      });
+    </script>
+
+  </body>
+
+<!-- Mirrored from hacktoberfest.digitalocean.com/eventkit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Oct 2019 06:08:02 GMT -->
+</html>
